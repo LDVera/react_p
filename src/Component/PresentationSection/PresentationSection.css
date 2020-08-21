@@ -1,0 +1,22 @@
+video{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.PSC-subContainer{
+    color: white;
+    height: 100%;
+}
+/* 
+.PresentationSection-Container{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+    box-shadow: inset 0 0 0 1000px rgba(0,  0, 0, 0.2);
+    object-fit: contain;
+} */
