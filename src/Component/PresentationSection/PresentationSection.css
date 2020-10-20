@@ -1,22 +1,82 @@
-video{
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
-.PSC-subContainer{
-    color: white;
-    height: 100%;
+
+.fotoCard1 {
+  width: 18rem;
 }
+
+.PresentationSection-Container {
+  height: 120vh;
+  width: 100%;
+  /* background-color: springgreen; */
+  color: rgb(0, 0, 0);
+  margin-right: 0%;
+  margin-left: 0%;
+  /* display: flex; */
+
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* margin-left: 0%; */
+  /* box-shadow: inset 0 0 0 1000px rgba(0,  0, 0, 0.2); */
+  /* object-fit: contain; */
+}
+.PresentationSection-Container > h1 {
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+}
+.PresentationSection-Container > p {
+  font-size: 32px;
+}
+.PresentationSection-btns {
+  margin-top: 32px;
+}
+.PresentationSection-btns .btn {
+  margin: 6px;
+}
+
 /* 
-.PresentationSection-Container{
-    height: 100vh;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0%;
-    box-shadow: inset 0 0 0 1000px rgba(0,  0, 0, 0.2);
-    object-fit: contain;
-} */
+with this instruction the font-size of the both elements change when the max-width 
+is resize to 768 px 
+*/
+@media (max-width: 960px) {
+  .PresentationSection-Container > h1 {
+    font-size: 75px;
+  }
+  .PresentationSection-container > p {
+    font-size: 24px;
+  }
+}
+
+/* 
+with this instruction the font-size of the both elements change when the max-width 
+is resize to 960 px 
+*/
+@media (max-width: 768px) {
+  .PresentationSection-Container > h1 {
+    font-size: 50px;
+  }
+  .PresentationSection-container > p {
+    font-size: 16px;
+  }
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleContainer > p {
+    font-size: 25px;
+  }
+  /* .titleContainer > p{
+        font-size: 24px;
+    } */
+}

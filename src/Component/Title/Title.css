@@ -1,0 +1,76 @@
+.titleContainer {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    --maskX: 0;
+    --maskY: 50; }
+    
+    p {
+      padding-left: 4%;
+      padding-right: 4%;
+      font-size: 3.8vh;
+      margin: 0;
+      line-height: 1.1em; }
+  
+  .fotoPresentacion{
+  width: 100%;
+  }
+
+  .contenedorPrimerS{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 22vh;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  
+  .mainTitle{
+    font-size: 6vh;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+
+  .titleWrapper {
+    color: rgb(92, 92, 92);
+    cursor: pointer; }
+  
+  .cloneWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #640810;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    clip-path: polygon(0 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 0, calc(var(--maskX) * 1% + (var(--maskY) - 50) * -.4%) 100%, 0 100%); }
+  
+  /* #endregion */
+
+  
+  @media (max-width: 960px){
+     p{
+        font-size: 4vh;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .mainTitle{
+      font-size: 5vh;
+    }
+    /* .titleContainer > p{
+        font-size: 24px;
+    } */
+  }
+
+  @media (max-width: 768px){
+    p{
+      padding-left: 4%;
+      padding-right: 4%;
+      font-size: 4vh;
+   }
+  .mainTitle{
+    font-size: 6vh;
+  }
+   /* .titleContainer > p{
+       font-size: 24px;
+   } */
+ }
